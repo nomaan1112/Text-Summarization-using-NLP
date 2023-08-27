@@ -1,5 +1,3 @@
-# Text-Summarization-using-NLP
-
 # End to end Text-Summarizer-Project
 
 ## Workflows
@@ -13,7 +11,7 @@
 7. update the main.py
 8. update the app.py
 
-Dataset URL: https://github.com/entbappy/Branching-tutorial/raw/master/samsumdata.zip
+
 # How to run?
 ### STEPS:
 
@@ -92,7 +90,6 @@ Email: nomaanansarii100@gmail.com
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/text-s
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -128,6 +125,6 @@ Email: nomaanansarii100@gmail.com
 
     AWS_REGION = us-east-1
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+    AWS_ECR_LOGIN_URI = 
 
-    ECR_REPOSITORY_NAME = simple-app
+    ECR_REPOSITORY_NAME =

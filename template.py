@@ -1,17 +1,16 @@
-#This file is to create the project Structure of Files and Folders.
-
 import os
 from pathlib import Path
 import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
+
 project_name = "textSummarizer"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
-    f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/conponents/__init__.py",
     f"src/{project_name}/utils/__init__.py",
     f"src/{project_name}/utils/common.py",
     f"src/{project_name}/logging/__init__.py",
@@ -28,6 +27,7 @@ list_of_files = [
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
+
 ]
 
 
@@ -45,5 +45,8 @@ for filepath in list_of_files:
             pass
             logging.info(f"Creating empty file: {filepath}")
 
+
+    
     else:
         logging.info(f"{filename} is already exists")
+

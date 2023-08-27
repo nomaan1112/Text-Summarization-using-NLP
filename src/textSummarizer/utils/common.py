@@ -2,7 +2,7 @@ import os
 from box.exceptions import BoxValueError
 import yaml
 from textSummarizer.logging import logger
-from ensurepip import ensure_annotations
+from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
 from typing import Any
@@ -35,7 +35,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
     
 
 
-@ensure_annotations  #This deorator gives an error if the datatype of the values input to the function are not the same as required by the function
+@ensure_annotations
 def create_directories(path_to_directories: list, verbose=True):
     """create list of directories
 
@@ -62,3 +62,5 @@ def get_size(path: Path) -> str:
     """
     size_in_kb = round(os.path.getsize(path)/1024)
     return f"~ {size_in_kb} KB"
+
+    
